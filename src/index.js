@@ -9,8 +9,6 @@ import { alert } from '@pnotify/core';
 import '@pnotify/core/dist/PNotify.css';
 import '@pnotify/core/dist/BrightTheme.css';
 
-const _ = require('lodash');
-
 refs.inputRefs.addEventListener('input', debounce(foundCountry, 500));
 
 function foundCountry(event) {
