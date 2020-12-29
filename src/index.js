@@ -16,14 +16,13 @@ function foundCountry(event) {
   clear();
   if (!name) {
     return;
-  } else {
-    fetchCountries(name)
-      .then(data => {
-        const length = data.length;
-        responseRate(length, data);
-      })
-      .catch(console.error);
   }
+  fetchCountries(name)
+    .then(data => {
+      const length = data.length;
+      responseRate(length, data);
+    })
+    .catch(console.error);
 }
 
 function createMarkup(items) {
